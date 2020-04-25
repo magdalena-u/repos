@@ -17,7 +17,7 @@ Each repo has information about:
 yarn install
 
 # Run build
-yarn buil
+yarn build
 
 # Run start
 yarn start
