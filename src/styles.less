@@ -1,0 +1,66 @@
+@header-background: #36d282;
+@header-color: #ffffff;
+
+@cell-background: #e0e0e0;
+@cell-hover: #c0bdbd;
+@border-color: #ffffff;
+
+@text-color: #000000;
+@text-color-hover: #ffffff;
+
+@font-lato: "Lato", sans-serif;
+
+body {
+  font-family: @font-lato;
+  margin-bottom: 3rem;
+}
+
+div {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+span {
+  background-color: @header-background;
+  padding: 15px;
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+
+  tr {
+    border-bottom: 1px solid @border-color;
+    background: @cell-background;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    th {
+      background-color: @header-background;
+      color: @header-color;
+      padding: 1rem 0;
+    }
+
+    td {
+      text-align: center;
+      padding: 1rem 0;
+
+      a {
+        color: @text-color;
+      }
+
+      a:hover {
+        color: @text-color-hover;
+      }
+    }
+
+    :nth-child(1) {
+      font-weight: bold;
+    }
+  }
+
+  tr:hover {
+    background-color: @cell-hover;
+  }
+}
